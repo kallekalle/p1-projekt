@@ -1,0 +1,8 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/kalle/Documents/GitHub/p1-projekt/build/cmake_install.cmake",
+		"/Users/kalle/Documents/GitHub/p1-projekt/build/src/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
