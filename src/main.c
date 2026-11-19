@@ -4,7 +4,7 @@
 
 #define MAX_NAME_LENGTH 30
 
-/*
+/*hej
 
     Hvis det danske ord på en kolonne indeholder æ, ø eller å, så har jeg oversat det til engelsk.
     I alle andre tilfælde står det bare på dansk :)):)
