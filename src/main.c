@@ -27,7 +27,11 @@ typedef struct
     char modul[MAX_NAME_LENGTH];   // her enten "fuldtid" eller "deltid 30 timer". man kunne også lave den som en int med 37 eller 30 (timer) som data, måske det er nemmere idk
     int garantidato;               // antager det her er "barnet SKAL have en plads inden denne dato"
     char notater[MAX_NAME_LENGTH]; // tror ikke vi får brug for den her
-    int prioritet;                 // 1 - 5 ik?
+    char prioritet1[MAX_NAME_LENGTH];
+    char prioritet2[MAX_NAME_LENGTH];
+    char prioritet3[MAX_NAME_LENGTH];
+    char prioritet4[MAX_NAME_LENGTH];
+    char prioritet5[MAX_NAME_LENGTH];
     bool specialneeds;             // har lavet det som en bool datatype med stdbool library, men kunne naturligvis også være en int
 
     // OBS: nedenstående er formentligt unødvendige.. i må lige vurdere hvad I synes
