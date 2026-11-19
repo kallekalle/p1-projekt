@@ -1,4 +1,4 @@
-Placering	Navn	Adresse	CPR-nummer	Fødselsdato	Behovsdato	Søskende	Aldersgruppe	Tilbud	Alder	Slutdato	Modul	Garantidato	Notater	Prioritet	Særforhold	Institution	Skoledistrikt	Betaler	Anden kommune	Nuværende institution	Fremtidig indmeldelse	Ændret	Ændret af	Ansøgningsdato
+Placering	Navn	Adresse	CPR-nummer
 5	Arthur Jensen	Møllefrøvej 48, 9000 Aalborg	0604226749	2022-06-07	2027-03-01	1	Børnehave	-	56	2027-02-28	Fuldtid	2027-03-15	-	2	0	Regnbuelunden	Midtbyen	Aalborg Kommune	-	Lille Egelund	-	2026-11-16	SB03	2026-06-23
 5	August Jensen	Eksempelvænget 68, 9220 Aalborg Øst	TEST-0002	2023-01-27	2027-02-01	0	Børnehave	-	48	-	Fuldtid	2027-02-01	-	2	0	Birkely	Øst	Aalborg Kommune	-	-	-	2026-11-04	SB03	2026-09-28
 3	Oscar Nørgaard	Spirekrogen 5, 9000 Aalborg	TEST-0003	2025-07-17	2027-02-01	0	Vuggestue	-	18	-	Fuldtid	2027-02-15	-	3	0	Lille Egelund	Midtbyen	Aalborg Kommune	-	-	-	2026-08-21	SB03	2026-07-29

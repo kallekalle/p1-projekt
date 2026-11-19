@@ -2,11 +2,9 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-#define MAX_NAME_LENGTH 30
+#define MAX_NAME_LENGTH 64
 
-/*hej
-
-hej magnus
+/*
 
     Hvis det danske ord på en kolonne indeholder æ, ø eller å, så har jeg oversat det til engelsk.
     I alle andre tilfælde står det bare på dansk :)):)
@@ -18,7 +16,7 @@ typedef struct
     char placering[MAX_NAME_LENGTH];
     char navn[MAX_NAME_LENGTH];
     char adresse[MAX_NAME_LENGTH];
-    int cpr;
+    char cpr[MAX_NAME_LENGTH];
     int birth; // skal den her sløjfes? vi har jo cpr
     int behovsdato;
     int siblings;                       // lidt usikker på om det her skal være antal søskende eller boolean
@@ -34,7 +32,7 @@ typedef struct
     char prioritet3[MAX_NAME_LENGTH];
     char prioritet4[MAX_NAME_LENGTH];
     char prioritet5[MAX_NAME_LENGTH];
-    bool specialneeds;             // har lavet det som en bool datatype med stdbool library, men kunne naturligvis også være en int
+    bool specialneeds; // har lavet det som en bool datatype med stdbool library, men kunne naturligvis også være en int
 
     // OBS: nedenstående er formentligt unødvendige.. i må lige vurdere hvad I synes
     char institution[MAX_NAME_LENGTH]; // lidt usikker på hvad den her dækker over.. spørg chat
@@ -51,34 +49,38 @@ typedef struct
 child_t read_child_from_file(FILE *f)
 {
     child_t child;
+    char line[1024];
 
-    char felt[100];
-    char separator;
-    for (int i = 0; i < 30; i++)
+    if (fgets(line, sizeof line, f) == NULL)
     {
-        if (fscanf(f, "%99[^\t\r\n]%c", felt, &separator) == 2 && separator == '\t')
-        {
-            printf("%s\n", felt);
-        }
+        printf("Kunne ikke læse næste række fra children.tsv\n");
+        exit(EXIT_FAILURE);
     }
-    /*
-    Ovenstående implementation ^^ er fra chatten (den uintelligente for-løkke har jeg dog selv lavet),
-    fordi jeg spurgte hvordan man læser fra en fil indtil næste tab/4 spaces.
-    Tænker man kan lave det på en lidt bedre måde, hvor den fx læser en hel linje, indtil \t (linjeskift i tsv-filer),
-    og man så kunne have en anden funktion, der skrev det til et structen? idk
-    */ 
+    // Vi har erklæret char-arrayet line; vi tjekker herefter med fgets
+    // om næste linje i filen f er NULL, hvis den er det, så exit
 
-    // fscanf(f, "%s %s %s %d", child.placering, child.navn, child.adresse, child.cpr);
+    int fields = sscanf(line,
+                        "%29[^\t\r\n]%*1[\t]%29[^\t\r\n]%*1[\t]"
+                        "%63[^\t\r\n]%*1[\t]%15[^\t\r\n]",
+                        child.placering, child.navn, child.adresse, child.cpr);
+    /*
+    sscanf læser de første fire felter og lægger dem ind i child-structen
+    (hvis vi senere hen finder ud af, at vi skal læse flere kolonner, så kan det naturligvis opdateres)
+    Grunden til vi ikke bruger fscanf længere, er fordi den ikke automatisk positionen i filen videre til næste række,
+    så ved næste kald ville den være på samme række
+    sscanf rykker den automatisk videre.
+    */
+
     return child;
+    // Jeg tror ikke denne returnerede funktionsværdi bruges til noget i funktionskaldet i main.. måske lige undersøge det nærmere
 }
 
 void print_child(child_t child)
 {
-    printf("Placering: %s\n", child.placering);
-    printf("Navn: %s\n", child.navn);
-    printf("Adresse: %s\n", child.adresse);
-    printf("CPR-nummer: %d\n", child.cpr);
-    printf("ooog så videre, ik ogs..\n");
+    printf("%s  ", child.placering);
+    printf("%s  ", child.navn);
+    printf("%s  ", child.adresse);
+    printf("%s  \n", child.cpr);
 }
 
 int main(void)
@@ -90,9 +92,19 @@ int main(void)
         exit(EXIT_FAILURE);
     }
 
+    /*
+    skal man her implementere en for-løkke,
+    der kender antallet af børn i filen (i < size)
+    og printer dem alle? i stedet for der skal
+    oprettes og printes 50 "manuelle" børn?
+    */
     child_t input_child = read_child_from_file(input_file);
+    child_t another_child = read_child_from_file(input_file);
+
     fclose(input_file);
-    // print_child(input_child);
+
+    print_child(input_child);
+    print_child(another_child);
 
     return 0;
 }
