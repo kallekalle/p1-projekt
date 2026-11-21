@@ -15,7 +15,11 @@ child_t Tiebreaker(child_t child1, child_t child2) {
     printf("child2value = %d", child2value);
 
     if (child1value > child2value) {
+        // Test output
+        printf("Chose child1");
         return child1;
     } // (child2value > child1value)
+    // Test output
+    printf("Chose child2");
     return child2;
 }
