@@ -3,22 +3,16 @@
 
 child_t Tiebreaker(child_t child1, child_t child2) {
     srand(time(NULL));
-    int child1value;
-    int child2value;
+    // Makes randomvalue which will be given value 0 or 1
+    int randomvalue = rand() % 2;
 
-    do {
-        child1value = rand() % 9;
-        child2value = rand() % 9;
-    } while (child1value == child2value);
-    //Test output
-    printf("child1value = %d", child1value);
-    printf("child2value = %d", child2value);
-
-    if (child1value > child2value) {
+    // randomvalue determines which child is returned from the function.
+    // We have to decide if the child returned is the one that loses or keeps their spot.
+    if (randomvalue == 0) {
         // Test output
         printf("Chose child1");
         return child1;
-    } // (child2value > child1value)
+    } // (randomvalue == 1)
     // Test output
     printf("Chose child2");
     return child2;
