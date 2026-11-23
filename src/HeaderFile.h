@@ -9,6 +9,7 @@
 #define MAX_NAME_LENGTH 64
 #define MAX_CHILDREN 1000
 #define MAX_CAPACITY 200
+#define MAX_PREFERENCES 5
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -22,11 +23,8 @@ typedef struct
     char name[MAX_NAME_LENGTH];
     int cpr[MAX_NAME_LENGTH];
     bool siblings;                       // lidt usikker på om det her skal være antal søskende eller boolean
-    int preference1;
-    int preference2;
-    int preference3;
-    int preference4;
-    int preference5;
+    int preferences[MAX_PREFERENCES];
+    int next_choice;
     bool specialneeds; // har lavet det som en bool datatype med stdbool library, men kunne naturligvis også være en int
     int application_date; // hvornår har barnet/forældrene ansøgt.. kunne måske være brugbar
     int assigned;
