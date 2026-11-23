@@ -49,3 +49,6 @@ typedef struct
     int changed_by;       // hvem har foretaget ændringerne
     int application_date; // hvornår har barnet/forældrene ansøgt.. kunne måske være brugbar
 } child_t;
+
+/* Functions below here */
+child_t Tiebreaker(child_t child1, child_t child2);
