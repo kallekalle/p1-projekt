@@ -20,19 +20,20 @@
 typedef struct
 {
     char navn[MAX_NAME_LENGTH];
-    char cpr[MAX_NAME_LENGTH];
+    int cpr[MAX_NAME_LENGTH];
     bool siblings;                       // lidt usikker på om det her skal være antal søskende eller boolean
-    char prioritet1[MAX_NAME_LENGTH];
-    char prioritet2[MAX_NAME_LENGTH];
-    char prioritet3[MAX_NAME_LENGTH];
-    char prioritet4[MAX_NAME_LENGTH];
-    char prioritet5[MAX_NAME_LENGTH];
+    int prioritet1;
+    int prioritet2;
+    int prioritet3;
+    int prioritet4;
+    int prioritet5;
     bool specialneeds; // har lavet det som en bool datatype med stdbool library, men kunne naturligvis også være en int
     int application_date; // hvornår har barnet/forældrene ansøgt.. kunne måske være brugbar
     int assigned;
 } child_t;
 
 typedef struct {
+    int index;
     char name[MAX_NAME_LENGTH];
     int capacity;
 
@@ -41,7 +42,6 @@ typedef struct {
 
     int assigned[MAX_CAPACITY];
     int assigned_count;
-
 } institution_t;
 
 /* Functions below here */
