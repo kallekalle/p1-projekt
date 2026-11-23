@@ -19,14 +19,14 @@
 /* Struct for each child registered for allocation */
 typedef struct
 {
-    char navn[MAX_NAME_LENGTH];
+    char name[MAX_NAME_LENGTH];
     int cpr[MAX_NAME_LENGTH];
     bool siblings;                       // lidt usikker på om det her skal være antal søskende eller boolean
-    int prioritet1;
-    int prioritet2;
-    int prioritet3;
-    int prioritet4;
-    int prioritet5;
+    int preference1;
+    int preference2;
+    int preference3;
+    int preference4;
+    int preference5;
     bool specialneeds; // har lavet det som en bool datatype med stdbool library, men kunne naturligvis også være en int
     int application_date; // hvornår har barnet/forældrene ansøgt.. kunne måske være brugbar
     int assigned;
@@ -45,4 +45,4 @@ typedef struct {
 } institution_t;
 
 /* Functions below here */
-child_t Tiebreaker(child_t child1, child_t child2);
+child_t tiebreaker(child_t child1, child_t child2);
