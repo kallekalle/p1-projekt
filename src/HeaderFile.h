@@ -44,3 +44,4 @@ typedef struct {
 
 /* Functions below here */
 child_t tiebreaker(child_t child1, child_t child2);
+FILE* filechoice();
