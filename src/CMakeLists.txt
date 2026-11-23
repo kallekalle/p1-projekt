@@ -1,3 +1,4 @@
 add_executable(main main.c
         RandomTiebreaker.c
-        HeaderFile.h)
+        HeaderFile.h
+        Filechoice.c)
