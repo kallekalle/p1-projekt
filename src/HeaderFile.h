@@ -21,7 +21,7 @@
 typedef struct
 {
     char name[MAX_NAME_LENGTH];
-    char cpr[11]; // char frem for int, fordi evt. foranstillede nuller (fx 060403-3123) skal medtages. hvis man indlæser det som en int, så forsvinder de.
+    char cpr[11]; // 10 cifre + '\0'. char frem for int, fordi evt. foranstillede nuller (fx 060403-3123) skal medtages. hvis man indlæser det som en int, så forsvinder de.
     bool siblings;                       // lidt usikker på om det her skal være antal søskende eller boolean
     int preferences[MAX_PREFERENCES];
     int next_choice;
@@ -45,3 +45,5 @@ typedef struct {
 /* Functions below here */
 child_t tiebreaker(child_t child1, child_t child2);
 FILE* filechoice();
+child_t read_child_from_file(FILE *f);
+void print_child(child_t child);

@@ -1,4 +1,12 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/main.dir/Filechoice.c.o"
+  "CMakeFiles/main.dir/Filechoice.c.o.d"
+  "CMakeFiles/main.dir/PrintChild.c.o"
+  "CMakeFiles/main.dir/PrintChild.c.o.d"
+  "CMakeFiles/main.dir/RandomTiebreaker.c.o"
+  "CMakeFiles/main.dir/RandomTiebreaker.c.o.d"
+  "CMakeFiles/main.dir/ReadChildFromFile.c.o"
+  "CMakeFiles/main.dir/ReadChildFromFile.c.o.d"
   "CMakeFiles/main.dir/main.c.o"
   "CMakeFiles/main.dir/main.c.o.d"
   "main"
