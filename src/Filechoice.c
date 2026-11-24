@@ -1,6 +1,6 @@
 #include "HeaderFile.h"
 
-FILE* filechoice() {
+FILE* Filechoice() {
 
     ///FILE *input_file = fopen("children.tsv", "r");
     int choice;
