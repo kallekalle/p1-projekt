@@ -1,6 +1,6 @@
 #include "HeaderFile.h"
 
-void AcceptOrReject (child_t child, institution_t institution) {
+void AcceptOrReject (child_t child, child_t lowestrankedchild, institution_t institution) {
     if (institution.capacity != 0) {
         // Assign the child to the institution via index
         child.assigned = institution.index;

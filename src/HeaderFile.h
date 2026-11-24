@@ -46,4 +46,4 @@ typedef struct {
 
 /* Functions below here */
 child_t Tiebreaker(child_t child1, child_t child2);
-void AcceptOrReject (child_t child, institution_t institution);
+void AcceptOrReject (child_t child, child_t lowestrankedchild, institution_t institution);
