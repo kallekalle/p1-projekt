@@ -86,10 +86,24 @@ src/CMakeFiles/main.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/main.c.s"
 	cd /Users/kalle/Documents/GitHub/p1-projekt/build/src && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kalle/Documents/GitHub/p1-projekt/src/main.c -o CMakeFiles/main.dir/main.c.s
 
+src/CMakeFiles/main.dir/DAA.c.o: src/CMakeFiles/main.dir/flags.make
+src/CMakeFiles/main.dir/DAA.c.o: /Users/kalle/Documents/GitHub/p1-projekt/src/DAA.c
+src/CMakeFiles/main.dir/DAA.c.o: src/CMakeFiles/main.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kalle/Documents/GitHub/p1-projekt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/main.dir/DAA.c.o"
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build/src && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/main.dir/DAA.c.o -MF CMakeFiles/main.dir/DAA.c.o.d -o CMakeFiles/main.dir/DAA.c.o -c /Users/kalle/Documents/GitHub/p1-projekt/src/DAA.c
+
+src/CMakeFiles/main.dir/DAA.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/main.dir/DAA.c.i"
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build/src && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/kalle/Documents/GitHub/p1-projekt/src/DAA.c > CMakeFiles/main.dir/DAA.c.i
+
+src/CMakeFiles/main.dir/DAA.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/main.dir/DAA.c.s"
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build/src && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/kalle/Documents/GitHub/p1-projekt/src/DAA.c -o CMakeFiles/main.dir/DAA.c.s
+
 src/CMakeFiles/main.dir/RandomTiebreaker.c.o: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/RandomTiebreaker.c.o: /Users/kalle/Documents/GitHub/p1-projekt/src/RandomTiebreaker.c
 src/CMakeFiles/main.dir/RandomTiebreaker.c.o: src/CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kalle/Documents/GitHub/p1-projekt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object src/CMakeFiles/main.dir/RandomTiebreaker.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kalle/Documents/GitHub/p1-projekt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/CMakeFiles/main.dir/RandomTiebreaker.c.o"
 	cd /Users/kalle/Documents/GitHub/p1-projekt/build/src && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/main.dir/RandomTiebreaker.c.o -MF CMakeFiles/main.dir/RandomTiebreaker.c.o.d -o CMakeFiles/main.dir/RandomTiebreaker.c.o -c /Users/kalle/Documents/GitHub/p1-projekt/src/RandomTiebreaker.c
 
 src/CMakeFiles/main.dir/RandomTiebreaker.c.i: cmake_force
@@ -103,7 +117,7 @@ src/CMakeFiles/main.dir/RandomTiebreaker.c.s: cmake_force
 src/CMakeFiles/main.dir/Filechoice.c.o: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/Filechoice.c.o: /Users/kalle/Documents/GitHub/p1-projekt/src/Filechoice.c
 src/CMakeFiles/main.dir/Filechoice.c.o: src/CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kalle/Documents/GitHub/p1-projekt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object src/CMakeFiles/main.dir/Filechoice.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kalle/Documents/GitHub/p1-projekt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/CMakeFiles/main.dir/Filechoice.c.o"
 	cd /Users/kalle/Documents/GitHub/p1-projekt/build/src && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/main.dir/Filechoice.c.o -MF CMakeFiles/main.dir/Filechoice.c.o.d -o CMakeFiles/main.dir/Filechoice.c.o -c /Users/kalle/Documents/GitHub/p1-projekt/src/Filechoice.c
 
 src/CMakeFiles/main.dir/Filechoice.c.i: cmake_force
@@ -117,7 +131,7 @@ src/CMakeFiles/main.dir/Filechoice.c.s: cmake_force
 src/CMakeFiles/main.dir/PrintChild.c.o: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/PrintChild.c.o: /Users/kalle/Documents/GitHub/p1-projekt/src/PrintChild.c
 src/CMakeFiles/main.dir/PrintChild.c.o: src/CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kalle/Documents/GitHub/p1-projekt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object src/CMakeFiles/main.dir/PrintChild.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kalle/Documents/GitHub/p1-projekt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/CMakeFiles/main.dir/PrintChild.c.o"
 	cd /Users/kalle/Documents/GitHub/p1-projekt/build/src && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/main.dir/PrintChild.c.o -MF CMakeFiles/main.dir/PrintChild.c.o.d -o CMakeFiles/main.dir/PrintChild.c.o -c /Users/kalle/Documents/GitHub/p1-projekt/src/PrintChild.c
 
 src/CMakeFiles/main.dir/PrintChild.c.i: cmake_force
@@ -131,7 +145,7 @@ src/CMakeFiles/main.dir/PrintChild.c.s: cmake_force
 src/CMakeFiles/main.dir/ReadChildFromFile.c.o: src/CMakeFiles/main.dir/flags.make
 src/CMakeFiles/main.dir/ReadChildFromFile.c.o: /Users/kalle/Documents/GitHub/p1-projekt/src/ReadChildFromFile.c
 src/CMakeFiles/main.dir/ReadChildFromFile.c.o: src/CMakeFiles/main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kalle/Documents/GitHub/p1-projekt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object src/CMakeFiles/main.dir/ReadChildFromFile.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/kalle/Documents/GitHub/p1-projekt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object src/CMakeFiles/main.dir/ReadChildFromFile.c.o"
 	cd /Users/kalle/Documents/GitHub/p1-projekt/build/src && /usr/bin/clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT src/CMakeFiles/main.dir/ReadChildFromFile.c.o -MF CMakeFiles/main.dir/ReadChildFromFile.c.o.d -o CMakeFiles/main.dir/ReadChildFromFile.c.o -c /Users/kalle/Documents/GitHub/p1-projekt/src/ReadChildFromFile.c
 
 src/CMakeFiles/main.dir/ReadChildFromFile.c.i: cmake_force
@@ -145,6 +159,7 @@ src/CMakeFiles/main.dir/ReadChildFromFile.c.s: cmake_force
 # Object files for target main
 main_OBJECTS = \
 "CMakeFiles/main.dir/main.c.o" \
+"CMakeFiles/main.dir/DAA.c.o" \
 "CMakeFiles/main.dir/RandomTiebreaker.c.o" \
 "CMakeFiles/main.dir/Filechoice.c.o" \
 "CMakeFiles/main.dir/PrintChild.c.o" \
@@ -154,13 +169,14 @@ main_OBJECTS = \
 main_EXTERNAL_OBJECTS =
 
 src/main: src/CMakeFiles/main.dir/main.c.o
+src/main: src/CMakeFiles/main.dir/DAA.c.o
 src/main: src/CMakeFiles/main.dir/RandomTiebreaker.c.o
 src/main: src/CMakeFiles/main.dir/Filechoice.c.o
 src/main: src/CMakeFiles/main.dir/PrintChild.c.o
 src/main: src/CMakeFiles/main.dir/ReadChildFromFile.c.o
 src/main: src/CMakeFiles/main.dir/build.make
 src/main: src/CMakeFiles/main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kalle/Documents/GitHub/p1-projekt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C executable main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/kalle/Documents/GitHub/p1-projekt/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable main"
 	cd /Users/kalle/Documents/GitHub/p1-projekt/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/main.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,51 +1,51 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <time.h>
 #include "HeaderFile.h"
 
-#define MAX_RANKED_PER_INST 1000
+    //for this to work we need to make a child struct with point and cpr so we can refer to it as child[i].point, and cpr
 
-typedef struct { //dette er det jeg har gået ud fra er måden vi alver institutioner på
-    char navn[MAX_NAME_LENGTH];
-    child_t rangeret[MAX_RANKED_PER_INST];
-    int antal_rangeret;
-} InstitutionListe;
+#define NUMBER_OF_CHILDREN 1000 // It needs to be loaded from the file.
+
+typedef struct { //headerfile.h mangler en childt_t ranking[NUMBER_OF_CHILDREN]
+    char name[MAX_NAME_LENGTH];
+    child_t ranking[NUMBER_OF_CHILDREN];
+    int number_of_ranked;
+} InstitutionList;
 
 
-void InstitutionListChild(InstitutionListe Institutioner[], int antal_institutions, const child_t child[], int antal_children) {
-    for (int k = 0; k < antal_institutions; k++) {
-        Institutioner[k].antal_rangeret = 0;
+void InstitutionListChild(InstitutionList Institutions[], int number_of_institutions, const child_t child[], int number_of_children) {
+    for (int k = 0; k < number_of_institutions; k++) {
+        Institutions[k].number_of_ranked = 0;
         //i delen under bliver barn nr. i kopieret over i institutionens liste
-        for (int i = 0; i < antal_children; i++) {
-            int r = Institutioner[k].antal_rangeret;
+        for (int i = 0; i < number_of_children; i++) {
+            int r = Institutions[k].number_of_ranked;
 
-                Institutioner[k].rangeret[r] = child[i];
-                Institutioner[k].rangeret[r].point = child[i].point;
-                Institutioner[k].antal_rangeret = Institutioner[k].antal_rangeret + 1;
+            Institutions[k].ranking[r] = child[i];
+            Institutions[k].number_of_ranked = Institutions[k].number_of_ranked + 1;
         }
-        for (int runde = 0; runde < Institutioner[k].antal_rangeret - 1; runde++) {
-            for (int a = 0; a < Institutioner[k].antal_rangeret - 1 - runde; a++) {
+        for (int round = 0; round < Institutions[k].number_of_ranked - 1; round++) {
+            for (int a = 0; a < Institutions[k].number_of_ranked - 1 - round; a++) {
                 int b = a + 1;
-
-                if (Institutioner[k].rangeret[b].point > Institutioner[k].rangeret[a].point) {
-                    child_t temp = Institutioner[k].rangeret[a];
-                    Institutioner[k].rangeret[a] = Institutioner[k].rangeret[b];
-                    Institutioner[k].rangeret[b] = temp;
+                
+                if (Institutions[k].ranking[b].point > Institutions[k].ranking[a].point) {
+                    child_t temp = Institutions[k].ranking[a];
+                    Institutions[k].ranking[a] = Institutions[k].ranking[b];
+                    Institutions[k].ranking[b] = temp;
                 }
 
-                if (Institutioner[k].rangeret[b].point == Institutioner[k].rangeret[a].point) {
-                    child_t child_1 = Institutioner[k].rangeret[a];
-                    child_t child_2 = Institutioner[k].rangeret[b];
+                else if (Institutions[k].ranking[b].point == Institutions[k].ranking[a].point) {
+                    child_t child_1 = Institutions[k].ranking[a];
+                    child_t child_2 = Institutions[k].ranking[b];
 
-                    child_t vinder = Tiebreaker(child_1, child_2){
+                    child_t vinder = Tiebreaker(child_1, child_2);
 
                     if (strcmp(vinder.cpr, child_1.cpr) == 0) {
-                        taber = child_2;
-                    } else {
-                    child_t temp = Institutioner[k].rangeret[a];
-                    Institutioner[k].rangeret[a] = Institutioner[k].rangeret[b];
-                    Institutioner[k].rangeret[b] = temp;
+                        //If child_1 wins nothing happens because the function does that already, 
+                    } else { //here the exactly same happens as in "if (Institutions[k].ranking[b].point > Institutions[k].ranking[a].point)"
+                    child_t temp = Institutions[k].ranking[a];
+                    Institutions[k].ranking[a] = Institutions[k].ranking[b];
+                    Institutions[k].ranking[b] = temp;
                     }
                 }
             }

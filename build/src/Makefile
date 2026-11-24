@@ -130,6 +130,30 @@ main/fast:
 	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+DAA.o: DAA.c.o
+.PHONY : DAA.o
+
+# target to build an object file
+DAA.c.o:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/DAA.c.o
+.PHONY : DAA.c.o
+
+DAA.i: DAA.c.i
+.PHONY : DAA.i
+
+# target to preprocess a source file
+DAA.c.i:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/DAA.c.i
+.PHONY : DAA.c.i
+
+DAA.s: DAA.c.s
+.PHONY : DAA.s
+
+# target to generate assembly for a file
+DAA.c.s:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/DAA.c.s
+.PHONY : DAA.c.s
+
 Filechoice.o: Filechoice.c.o
 .PHONY : Filechoice.o
 
@@ -259,6 +283,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... DAA.o"
+	@echo "... DAA.i"
+	@echo "... DAA.s"
 	@echo "... Filechoice.o"
 	@echo "... Filechoice.i"
 	@echo "... Filechoice.s"
