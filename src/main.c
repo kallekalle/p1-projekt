@@ -20,7 +20,7 @@ int main(void)
 
     fclose(input_file);
 
-    printf("Name\tCPR-number\tHas siblings (boolean)\tPreferences 1-5\n");
+    printf("Name\tCPR-number\tSibling institution index (-1 = none)\tPreferences 1-5\n");
 
     print_child(input_child);
     print_child(another_child);
