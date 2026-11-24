@@ -9,6 +9,7 @@
 #define MAX_NAME_LENGTH 64
 #define MAX_CHILDREN 1000
 #define MAX_CAPACITY 200
+#define MAX_PREFERENCES 5
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -19,14 +20,11 @@
 /* Struct for each child registered for allocation */
 typedef struct
 {
-    char navn[MAX_NAME_LENGTH];
-    int cpr[MAX_NAME_LENGTH];
+    char name[MAX_NAME_LENGTH];
+    char cpr[11]; // 10 cifre + '\0'. char frem for int, fordi evt. foranstillede nuller (fx 060403-3123) skal medtages. hvis man indlæser det som en int, så forsvinder de.
     bool siblings;                       // lidt usikker på om det her skal være antal søskende eller boolean
-    int prioritet1;
-    int prioritet2;
-    int prioritet3;
-    int prioritet4;
-    int prioritet5;
+    int preferences[MAX_PREFERENCES];
+    int next_choice;
     bool specialneeds; // har lavet det som en bool datatype med stdbool library, men kunne naturligvis også være en int
     int application_date; // hvornår har barnet/forældrene ansøgt.. kunne måske være brugbar
     int assigned;
@@ -47,3 +45,7 @@ typedef struct {
 /* Functions below here */
 child_t Tiebreaker(child_t child1, child_t child2);
 void AcceptOrReject (child_t child, child_t lowestrankedchild, institution_t institution);
+child_t tiebreaker(child_t child1, child_t child2);
+FILE* filechoice();
+child_t read_child_from_file(FILE *f);
+void print_child(child_t child);
