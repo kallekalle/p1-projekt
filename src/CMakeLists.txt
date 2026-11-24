@@ -1,3 +1,3 @@
 add_executable(main main.c
-        RandomTiebreaker.c
+        DAA.c RandomTiebreaker.c
         HeaderFile.h)
