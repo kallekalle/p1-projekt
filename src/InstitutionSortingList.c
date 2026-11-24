@@ -22,7 +22,7 @@ void InstitutionListChild(InstitutionList Institutions[], int number_of_institut
             int r = Institutions[k].number_of_ranked;
 
             Institutions[k].ranking[r] = child[i];
-            Institutions[k].number_of_ranked = Institutions[k].number_of_ranked + 1;
+            Institutions[k].number_of_ranked++;
         }
         for (int round = 0; round < Institutions[k].number_of_ranked - 1; round++) {
             for (int a = 0; a < Institutions[k].number_of_ranked - 1 - round; a++) {

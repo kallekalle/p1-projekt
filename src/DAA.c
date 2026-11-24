@@ -5,10 +5,10 @@ void AcceptOrReject (child_t child, child_t lowestrankedchild, institution_t ins
         // Assign the child to the institution via index
         child.assigned = institution.index;
         // Decrease capacity by 1
-        institution.assigned_count --;
-    } else if (child.rank > lowestrankedchild.rank){
+        institution.assigned_count++;
+    } else if (institution.capacity == 0 && child.rank > lowestrankedchild.rank){
         // Unassign the lowest ranked child
-        lowestrankedchild.assigned = 0;
+        lowestrankedchild.assigned = -1;
         child.assigned = institution.index;
     } else {
        // Don't do anything
