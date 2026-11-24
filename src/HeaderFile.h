@@ -10,6 +10,7 @@
 #define MAX_CHILDREN 1000
 #define MAX_CAPACITY 200
 #define MAX_PREFERENCES 5
+#define MAX_ID_PLUS_TWO 12
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -21,7 +22,7 @@
 typedef struct
 {
     char name[MAX_NAME_LENGTH];
-    char cpr[11]; // 10 cifre + '\0'. char frem for int, fordi evt. foranstillede nuller (fx 060403-3123) skal medtages. hvis man indlæser det som en int, så forsvinder de.
+    char cpr[MAX_ID_PLUS_TWO]; // 10 cifre + '\0'. char frem for int, fordi evt. foranstillede nuller (fx 060403-3123) skal medtages. hvis man indlæser det som en int, så forsvinder de.
     bool siblings;                       // lidt usikker på om det her skal være antal søskende eller boolean
     int preferences[MAX_PREFERENCES];
     int next_choice;
