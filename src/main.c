@@ -3,15 +3,13 @@
 #include <windows.h>
 #endif
 
-
-
 int main(void)
 {
+// Gør sådan at alle systemer/compilers kan printe æ, ø og å
 #ifdef _WIN32
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
 #endif
-
 
     FILE *input_file = Filechoice();
 
