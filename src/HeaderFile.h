@@ -45,7 +45,6 @@ typedef struct {
 /* Functions below here */
 child_t Tiebreaker(child_t child1, child_t child2);
 void AcceptOrReject (child_t child, child_t lowestrankedchild, institution_t institution);
-child_t tiebreaker(child_t child1, child_t child2);
-FILE* filechoice();
+FILE* Filechoice();
 child_t read_child_from_file(FILE *f);
 void print_child(child_t child);
