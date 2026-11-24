@@ -130,6 +130,102 @@ main/fast:
 	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
+Filechoice.o: Filechoice.c.o
+.PHONY : Filechoice.o
+
+# target to build an object file
+Filechoice.c.o:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Filechoice.c.o
+.PHONY : Filechoice.c.o
+
+Filechoice.i: Filechoice.c.i
+.PHONY : Filechoice.i
+
+# target to preprocess a source file
+Filechoice.c.i:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Filechoice.c.i
+.PHONY : Filechoice.c.i
+
+Filechoice.s: Filechoice.c.s
+.PHONY : Filechoice.s
+
+# target to generate assembly for a file
+Filechoice.c.s:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Filechoice.c.s
+.PHONY : Filechoice.c.s
+
+PrintChild.o: PrintChild.c.o
+.PHONY : PrintChild.o
+
+# target to build an object file
+PrintChild.c.o:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/PrintChild.c.o
+.PHONY : PrintChild.c.o
+
+PrintChild.i: PrintChild.c.i
+.PHONY : PrintChild.i
+
+# target to preprocess a source file
+PrintChild.c.i:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/PrintChild.c.i
+.PHONY : PrintChild.c.i
+
+PrintChild.s: PrintChild.c.s
+.PHONY : PrintChild.s
+
+# target to generate assembly for a file
+PrintChild.c.s:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/PrintChild.c.s
+.PHONY : PrintChild.c.s
+
+RandomTiebreaker.o: RandomTiebreaker.c.o
+.PHONY : RandomTiebreaker.o
+
+# target to build an object file
+RandomTiebreaker.c.o:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/RandomTiebreaker.c.o
+.PHONY : RandomTiebreaker.c.o
+
+RandomTiebreaker.i: RandomTiebreaker.c.i
+.PHONY : RandomTiebreaker.i
+
+# target to preprocess a source file
+RandomTiebreaker.c.i:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/RandomTiebreaker.c.i
+.PHONY : RandomTiebreaker.c.i
+
+RandomTiebreaker.s: RandomTiebreaker.c.s
+.PHONY : RandomTiebreaker.s
+
+# target to generate assembly for a file
+RandomTiebreaker.c.s:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/RandomTiebreaker.c.s
+.PHONY : RandomTiebreaker.c.s
+
+ReadChildFromFile.o: ReadChildFromFile.c.o
+.PHONY : ReadChildFromFile.o
+
+# target to build an object file
+ReadChildFromFile.c.o:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/ReadChildFromFile.c.o
+.PHONY : ReadChildFromFile.c.o
+
+ReadChildFromFile.i: ReadChildFromFile.c.i
+.PHONY : ReadChildFromFile.i
+
+# target to preprocess a source file
+ReadChildFromFile.c.i:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/ReadChildFromFile.c.i
+.PHONY : ReadChildFromFile.c.i
+
+ReadChildFromFile.s: ReadChildFromFile.c.s
+.PHONY : ReadChildFromFile.s
+
+# target to generate assembly for a file
+ReadChildFromFile.c.s:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/ReadChildFromFile.c.s
+.PHONY : ReadChildFromFile.c.s
+
 main.o: main.c.o
 .PHONY : main.o
 
@@ -163,6 +259,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
+	@echo "... Filechoice.o"
+	@echo "... Filechoice.i"
+	@echo "... Filechoice.s"
+	@echo "... PrintChild.o"
+	@echo "... PrintChild.i"
+	@echo "... PrintChild.s"
+	@echo "... RandomTiebreaker.o"
+	@echo "... RandomTiebreaker.i"
+	@echo "... RandomTiebreaker.s"
+	@echo "... ReadChildFromFile.o"
+	@echo "... ReadChildFromFile.i"
+	@echo "... ReadChildFromFile.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
