@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/main.dir/DAA.c.o"
-  "CMakeFiles/main.dir/DAA.c.o.d"
   "CMakeFiles/main.dir/Filechoice.c.o"
   "CMakeFiles/main.dir/Filechoice.c.o.d"
   "CMakeFiles/main.dir/PrintChild.c.o"
