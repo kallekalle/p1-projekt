@@ -4,4 +4,5 @@ add_executable(main main.c
         RandomTiebreaker.c
         Filechoice.c
         PrintChild.c
-        ReadChildFromFile.c)
+        ReadChildFromFile.c
+        InstitutionSortingList.c)

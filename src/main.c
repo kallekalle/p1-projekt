@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    FILE *input_file = filechoice();
+    FILE *input_file = Filechoice();
 
     // en enkelt fgets for at springe første linje med kolonne-navnene over
     char header[1024];
