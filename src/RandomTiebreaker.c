@@ -7,7 +7,7 @@ child_t Tiebreaker(child_t child1, child_t child2) {
     int randomvalue = rand() % 2;
 
     // randomvalue determines which child is returned from the function.
-    // We have to decide if the child returned is the one that loses or keeps their spot.
+    // The child returned is the one that gets the spot.
     if (randomvalue == 0) {
         // Test output
         printf("Chose child1");
