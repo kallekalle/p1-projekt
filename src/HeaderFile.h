@@ -4,7 +4,6 @@
 
 #ifndef P1_PROJEKT_HEADERFILE_H
 #define P1_PROJEKT_HEADERFILE_H
-#endif //P1_PROJEKT_HEADERFILE_H
 
 #define MAX_NAME_LENGTH 64
 #define MAX_CHILDREN 1000
@@ -49,3 +48,5 @@ void AcceptOrReject (child_t child, child_t lowestrankedchild, institution_t ins
 FILE* Filechoice();
 child_t read_child_from_file(FILE *f);
 void print_child(child_t child);
+
+#endif //P1_PROJEKT_HEADERFILE_H
