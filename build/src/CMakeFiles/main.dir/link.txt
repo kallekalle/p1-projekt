@@ -1,1 +1,0 @@
-/usr/bin/clang -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/main.dir/main.c.o CMakeFiles/main.dir/tiebreaker.c.o CMakeFiles/main.dir/file_choice.c.o CMakeFiles/main.dir/print_child.c.o CMakeFiles/main.dir/read_child_from_file.c.o -o main

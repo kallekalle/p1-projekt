@@ -1,5 +1,0 @@
-/Users/kalle/Documents/GitHub/p1-projekt/build/CMakeFiles/edit_cache.dir
-/Users/kalle/Documents/GitHub/p1-projekt/build/CMakeFiles/rebuild_cache.dir
-/Users/kalle/Documents/GitHub/p1-projekt/build/src/CMakeFiles/main.dir
-/Users/kalle/Documents/GitHub/p1-projekt/build/src/CMakeFiles/edit_cache.dir
-/Users/kalle/Documents/GitHub/p1-projekt/build/src/CMakeFiles/rebuild_cache.dir
