@@ -1,4 +1,4 @@
-#include "HeaderFile.h"
+#include "main_header.h"
 
 void print_child(child_t child)
 {
@@ -6,7 +6,7 @@ void print_child(child_t child)
     printf("%s  ", child.cpr);
     printf("%d  ", child.siblings);
     for (int i = 0; i < MAX_PREFERENCES; i++)
-    { // gennemløber alle pladserne i preferences-arrayet
+    {
         printf("%d ", child.preferences[i]);
     }
     printf("\n");

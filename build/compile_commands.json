@@ -7,26 +7,26 @@
 },
 {
   "directory": "/Users/kalle/Documents/GitHub/p1-projekt/build/src",
-  "command": "/usr/bin/clang   -g -std=gnu11 -arch arm64 -o CMakeFiles/main.dir/RandomTiebreaker.c.o -c /Users/kalle/Documents/GitHub/p1-projekt/src/RandomTiebreaker.c",
-  "file": "/Users/kalle/Documents/GitHub/p1-projekt/src/RandomTiebreaker.c",
-  "output": "src/CMakeFiles/main.dir/RandomTiebreaker.c.o"
+  "command": "/usr/bin/clang   -g -std=gnu11 -arch arm64 -o CMakeFiles/main.dir/tiebreaker.c.o -c /Users/kalle/Documents/GitHub/p1-projekt/src/tiebreaker.c",
+  "file": "/Users/kalle/Documents/GitHub/p1-projekt/src/tiebreaker.c",
+  "output": "src/CMakeFiles/main.dir/tiebreaker.c.o"
 },
 {
   "directory": "/Users/kalle/Documents/GitHub/p1-projekt/build/src",
-  "command": "/usr/bin/clang   -g -std=gnu11 -arch arm64 -o CMakeFiles/main.dir/Filechoice.c.o -c /Users/kalle/Documents/GitHub/p1-projekt/src/Filechoice.c",
-  "file": "/Users/kalle/Documents/GitHub/p1-projekt/src/Filechoice.c",
-  "output": "src/CMakeFiles/main.dir/Filechoice.c.o"
+  "command": "/usr/bin/clang   -g -std=gnu11 -arch arm64 -o CMakeFiles/main.dir/file_choice.c.o -c /Users/kalle/Documents/GitHub/p1-projekt/src/file_choice.c",
+  "file": "/Users/kalle/Documents/GitHub/p1-projekt/src/file_choice.c",
+  "output": "src/CMakeFiles/main.dir/file_choice.c.o"
 },
 {
   "directory": "/Users/kalle/Documents/GitHub/p1-projekt/build/src",
-  "command": "/usr/bin/clang   -g -std=gnu11 -arch arm64 -o CMakeFiles/main.dir/PrintChild.c.o -c /Users/kalle/Documents/GitHub/p1-projekt/src/PrintChild.c",
-  "file": "/Users/kalle/Documents/GitHub/p1-projekt/src/PrintChild.c",
-  "output": "src/CMakeFiles/main.dir/PrintChild.c.o"
+  "command": "/usr/bin/clang   -g -std=gnu11 -arch arm64 -o CMakeFiles/main.dir/print_child.c.o -c /Users/kalle/Documents/GitHub/p1-projekt/src/print_child.c",
+  "file": "/Users/kalle/Documents/GitHub/p1-projekt/src/print_child.c",
+  "output": "src/CMakeFiles/main.dir/print_child.c.o"
 },
 {
   "directory": "/Users/kalle/Documents/GitHub/p1-projekt/build/src",
-  "command": "/usr/bin/clang   -g -std=gnu11 -arch arm64 -o CMakeFiles/main.dir/ReadChildFromFile.c.o -c /Users/kalle/Documents/GitHub/p1-projekt/src/ReadChildFromFile.c",
-  "file": "/Users/kalle/Documents/GitHub/p1-projekt/src/ReadChildFromFile.c",
-  "output": "src/CMakeFiles/main.dir/ReadChildFromFile.c.o"
+  "command": "/usr/bin/clang   -g -std=gnu11 -arch arm64 -o CMakeFiles/main.dir/read_child_from_file.c.o -c /Users/kalle/Documents/GitHub/p1-projekt/src/read_child_from_file.c",
+  "file": "/Users/kalle/Documents/GitHub/p1-projekt/src/read_child_from_file.c",
+  "output": "src/CMakeFiles/main.dir/read_child_from_file.c.o"
 }
 ]

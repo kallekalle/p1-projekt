@@ -1,9 +1,9 @@
 add_executable(main main.c
-        # DAA.c
-        HeaderFile.h
-        RandomTiebreaker.c
-        Filechoice.c
-        PrintChild.c
-        ReadChildFromFile.c
-        # InstitutionSortingList.c
+        main_header.h
+        tiebreaker.c
+        file_choice.c
+        print_child.c
+        read_child_from_file.c
+        # institution_sorting_list.c
+        # daa.c
         )

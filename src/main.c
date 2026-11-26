@@ -1,22 +1,13 @@
-#include "HeaderFile.h"
-#ifdef _WIN32
-#include <windows.h>
-#endif
+#include "main_header.h"
 
 int main(void)
 {
-// Gør sådan at alle systemer/compilers kan printe æ, ø og å
-#ifdef _WIN32
-    SetConsoleOutputCP(CP_UTF8);
-    SetConsoleCP(CP_UTF8);
-#endif
+    FILE *input_file = file_choice();
 
-    FILE *input_file = Filechoice();
-
-    // en enkelt fgets for at springe første linje med kolonne-navnene over
+    // One fgets-call to skip the first header row in children.tsv
     char header[1024];
     fgets(header, sizeof header, input_file);
-    // ligesom i read_child_from_file, så tjekkes der også her om overskrifterne kan læses
+    // Checks if the headers are readable - exits if not
     if (fgets(header, sizeof header, input_file) == NULL)
     {
         fprintf(stderr, "Kunne ikke læse overskriften\n");

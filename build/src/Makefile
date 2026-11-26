@@ -130,101 +130,29 @@ main/fast:
 	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/build
 .PHONY : main/fast
 
-Filechoice.o: Filechoice.c.o
-.PHONY : Filechoice.o
+file_choice.o: file_choice.c.o
+.PHONY : file_choice.o
 
 # target to build an object file
-Filechoice.c.o:
-	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Filechoice.c.o
-.PHONY : Filechoice.c.o
+file_choice.c.o:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/file_choice.c.o
+.PHONY : file_choice.c.o
 
-Filechoice.i: Filechoice.c.i
-.PHONY : Filechoice.i
-
-# target to preprocess a source file
-Filechoice.c.i:
-	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Filechoice.c.i
-.PHONY : Filechoice.c.i
-
-Filechoice.s: Filechoice.c.s
-.PHONY : Filechoice.s
-
-# target to generate assembly for a file
-Filechoice.c.s:
-	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/Filechoice.c.s
-.PHONY : Filechoice.c.s
-
-PrintChild.o: PrintChild.c.o
-.PHONY : PrintChild.o
-
-# target to build an object file
-PrintChild.c.o:
-	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/PrintChild.c.o
-.PHONY : PrintChild.c.o
-
-PrintChild.i: PrintChild.c.i
-.PHONY : PrintChild.i
+file_choice.i: file_choice.c.i
+.PHONY : file_choice.i
 
 # target to preprocess a source file
-PrintChild.c.i:
-	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/PrintChild.c.i
-.PHONY : PrintChild.c.i
+file_choice.c.i:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/file_choice.c.i
+.PHONY : file_choice.c.i
 
-PrintChild.s: PrintChild.c.s
-.PHONY : PrintChild.s
-
-# target to generate assembly for a file
-PrintChild.c.s:
-	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/PrintChild.c.s
-.PHONY : PrintChild.c.s
-
-RandomTiebreaker.o: RandomTiebreaker.c.o
-.PHONY : RandomTiebreaker.o
-
-# target to build an object file
-RandomTiebreaker.c.o:
-	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/RandomTiebreaker.c.o
-.PHONY : RandomTiebreaker.c.o
-
-RandomTiebreaker.i: RandomTiebreaker.c.i
-.PHONY : RandomTiebreaker.i
-
-# target to preprocess a source file
-RandomTiebreaker.c.i:
-	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/RandomTiebreaker.c.i
-.PHONY : RandomTiebreaker.c.i
-
-RandomTiebreaker.s: RandomTiebreaker.c.s
-.PHONY : RandomTiebreaker.s
+file_choice.s: file_choice.c.s
+.PHONY : file_choice.s
 
 # target to generate assembly for a file
-RandomTiebreaker.c.s:
-	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/RandomTiebreaker.c.s
-.PHONY : RandomTiebreaker.c.s
-
-ReadChildFromFile.o: ReadChildFromFile.c.o
-.PHONY : ReadChildFromFile.o
-
-# target to build an object file
-ReadChildFromFile.c.o:
-	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/ReadChildFromFile.c.o
-.PHONY : ReadChildFromFile.c.o
-
-ReadChildFromFile.i: ReadChildFromFile.c.i
-.PHONY : ReadChildFromFile.i
-
-# target to preprocess a source file
-ReadChildFromFile.c.i:
-	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/ReadChildFromFile.c.i
-.PHONY : ReadChildFromFile.c.i
-
-ReadChildFromFile.s: ReadChildFromFile.c.s
-.PHONY : ReadChildFromFile.s
-
-# target to generate assembly for a file
-ReadChildFromFile.c.s:
-	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/ReadChildFromFile.c.s
-.PHONY : ReadChildFromFile.c.s
+file_choice.c.s:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/file_choice.c.s
+.PHONY : file_choice.c.s
 
 main.o: main.c.o
 .PHONY : main.o
@@ -250,6 +178,78 @@ main.c.s:
 	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/main.c.s
 .PHONY : main.c.s
 
+print_child.o: print_child.c.o
+.PHONY : print_child.o
+
+# target to build an object file
+print_child.c.o:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/print_child.c.o
+.PHONY : print_child.c.o
+
+print_child.i: print_child.c.i
+.PHONY : print_child.i
+
+# target to preprocess a source file
+print_child.c.i:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/print_child.c.i
+.PHONY : print_child.c.i
+
+print_child.s: print_child.c.s
+.PHONY : print_child.s
+
+# target to generate assembly for a file
+print_child.c.s:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/print_child.c.s
+.PHONY : print_child.c.s
+
+read_child_from_file.o: read_child_from_file.c.o
+.PHONY : read_child_from_file.o
+
+# target to build an object file
+read_child_from_file.c.o:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/read_child_from_file.c.o
+.PHONY : read_child_from_file.c.o
+
+read_child_from_file.i: read_child_from_file.c.i
+.PHONY : read_child_from_file.i
+
+# target to preprocess a source file
+read_child_from_file.c.i:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/read_child_from_file.c.i
+.PHONY : read_child_from_file.c.i
+
+read_child_from_file.s: read_child_from_file.c.s
+.PHONY : read_child_from_file.s
+
+# target to generate assembly for a file
+read_child_from_file.c.s:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/read_child_from_file.c.s
+.PHONY : read_child_from_file.c.s
+
+tiebreaker.o: tiebreaker.c.o
+.PHONY : tiebreaker.o
+
+# target to build an object file
+tiebreaker.c.o:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tiebreaker.c.o
+.PHONY : tiebreaker.c.o
+
+tiebreaker.i: tiebreaker.c.i
+.PHONY : tiebreaker.i
+
+# target to preprocess a source file
+tiebreaker.c.i:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tiebreaker.c.i
+.PHONY : tiebreaker.c.i
+
+tiebreaker.s: tiebreaker.c.s
+.PHONY : tiebreaker.s
+
+# target to generate assembly for a file
+tiebreaker.c.s:
+	cd /Users/kalle/Documents/GitHub/p1-projekt/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/main.dir/build.make src/CMakeFiles/main.dir/tiebreaker.c.s
+.PHONY : tiebreaker.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -259,21 +259,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... main"
-	@echo "... Filechoice.o"
-	@echo "... Filechoice.i"
-	@echo "... Filechoice.s"
-	@echo "... PrintChild.o"
-	@echo "... PrintChild.i"
-	@echo "... PrintChild.s"
-	@echo "... RandomTiebreaker.o"
-	@echo "... RandomTiebreaker.i"
-	@echo "... RandomTiebreaker.s"
-	@echo "... ReadChildFromFile.o"
-	@echo "... ReadChildFromFile.i"
-	@echo "... ReadChildFromFile.s"
+	@echo "... file_choice.o"
+	@echo "... file_choice.i"
+	@echo "... file_choice.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... print_child.o"
+	@echo "... print_child.i"
+	@echo "... print_child.s"
+	@echo "... read_child_from_file.o"
+	@echo "... read_child_from_file.i"
+	@echo "... read_child_from_file.s"
+	@echo "... tiebreaker.o"
+	@echo "... tiebreaker.i"
+	@echo "... tiebreaker.s"
 .PHONY : help
 
 
