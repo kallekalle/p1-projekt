@@ -1,6 +1,6 @@
 # Cmake stuff
 /src/.idea/
-
+.clang-format
 
 # Template below
 # Default ignored files
