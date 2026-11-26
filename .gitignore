@@ -1,3 +1,8 @@
+# Cmake stuff
+/src/.idea
+
+
+# Template below
 # Default ignored files
 /shelf/
 /workspace.xml
