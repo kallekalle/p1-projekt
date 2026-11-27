@@ -5,7 +5,14 @@ child_t read_child_from_file(FILE *f)
     child_t child;
     char line[1024];
 
-    // Checks if the next line in children.tsv is NULL - exits if it is
+    /* Checks if the next line in children.tsv is NULL - if it is,
+    * it then prints an error message and exits.
+    * When this if-statement is evaluated, the variable 'line' already
+    * gets assigned the contents of the file. Therefore we can sscanf
+    * directly on 'line' thereafter, and assign the data to the other
+    * variables.
+    */
+
     if (fgets(line, sizeof line, f) == NULL)
     {
         printf("Kunne ikke læse næste række fra children.tsv\n");
