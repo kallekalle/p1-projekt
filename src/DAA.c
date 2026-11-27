@@ -4,7 +4,7 @@ void accept_or_reject (child_t child, child_t lowest_ranked_child, institution_t
     if (institution.capacity - institution.assigned_count != 0) {
         // Assign the child to the institution via index
         child.assigned = institution.index;
-        // Decrease capacity by 1
+        // Increase number of assigned by 1
         institution.assigned_count++;
     } else if (institution.capacity == 0 && child.rank > lowest_ranked_child.rank){
         // Unassign the lowest ranked child
