@@ -1,15 +1,16 @@
 #include "main_header.h"
 
-void accept_or_reject (child_t child, child_t lowest_ranked_child, institution_t institution) {
+void accept_or_reject (child_t prop_child, child_t lowest_rank_child, institution_t institution) {
     if (institution.capacity - institution.assigned_count > 0) {
-        // Assign the child to the institution via index
-        child.assigned = institution.index;
+        // Assign proposing child to the institution via index
+        prop_child.assigned = institution.index;
         institution.assigned_count++;
-    } else if (institution.capacity - institution.assigned_count == 0 && child.rank > lowest_ranked_child.rank){
-        // Unassign the lowest ranked child
-        lowest_ranked_child.assigned = -1;
-        child.assigned = institution.index;
+    }
+    else if (prop_child.rank > lowest_rank_child.rank){
+        // Unassign the lowest ranked child and assign proposing child instead
+        lowest_rank_child.assigned = -1;
+        prop_child.assigned = institution.index;
     } else {
-       // Don't do anything
+       // Don't do anything - Rejecting proposing child
     }
 }
