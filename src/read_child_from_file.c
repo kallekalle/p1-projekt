@@ -13,8 +13,7 @@ child_t read_child_from_file(FILE *f)
     * variables.
     */
 
-    if (fgets(line, sizeof line, f) == NULL)
-    {
+    if (fgets(line, sizeof line, f) == NULL) {
         printf("Could not read next row in children.tsv\n");
         exit(EXIT_FAILURE);
     }
@@ -26,10 +25,10 @@ child_t read_child_from_file(FILE *f)
                         &child.preferences[0], &child.preferences[1], &child.preferences[2],
                         &child.preferences[3], &child.preferences[4]);
 
-    if (fields != 8)
-    {
-        fprintf(stderr, "Kunne ikke læse alle felter for barnet\n");
+    if (fields != 8) {
+        fprintf(stderr, "Could not read all fields for the child\n");
         exit(EXIT_FAILURE);
     }
+    
     return child; // THIS RETURN VALUE IS CURRENTLY UNUSED.. MAYBE THIS SHOULD BE A VOID FUNCTION INSTEAD?
 }
