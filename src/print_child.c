@@ -9,5 +9,7 @@ void print_child(child_t child)
     {
         printf("%d ", child.preferences[i]);
     }
+    printf("%d  ", child.specialneeds);
+    printf("%d  ", child.application_date);
     printf("\n");
 }

@@ -6,7 +6,7 @@ int main(void)
 
     // One fgets-call to skip the first header row in children.tsv
     char header[1024];
-    fgets(header, sizeof header, input_file);
+    // fgets(header, sizeof header, input_file);
     // Checks if the headers are readable - exits if not
     if (fgets(header, sizeof header, input_file) == NULL)
     {
@@ -20,7 +20,7 @@ int main(void)
 
     fclose(input_file);
 
-    printf("Name\tCPR-number\tSibling institution index (-1 = none)\tPreferences 1-5\tSpecial needs (true or false)\tApplication date (YYYYMMDD\t)");
+    printf("Name\tCPR-number\tSibling institution index (-1 = none)\tPreferences 1-5\tSpecial needs (true or false)\tApplication date (YYYYMMDD)\n");
 
     print_child(input_child);
     print_child(another_child);
