@@ -33,7 +33,7 @@ typedef struct
     int siblings;              // Institution index, or -1 if the child has no siblings in an institution.
     int preferences[MAX_PREFERENCES];
     int next_choice;
-    bool specialneeds; // True or false, doesn't say to what degree
+    int specialneeds; // True/1 or false/0 - doesn't say "how" special needs
     int application_date;
     int assigned;
 } child_t;
