@@ -1,3 +1,2 @@
-# p1-projekt
-
-Det her er readme'en til vores p1 projekt bla bla bla
+# 🚨 Vi skal have lavet den her readme!
+### (inden vi glemmer det...)
