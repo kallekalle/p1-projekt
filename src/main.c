@@ -4,9 +4,7 @@ int main(void)
 {
     FILE *input_file = file_choice();
 
-    // One fgets-call to skip the first header row in children.tsv
     char header[1024];
-    // fgets(header, sizeof header, input_file);
     // Checks if the headers are readable - exits if not
     if (fgets(header, sizeof header, input_file) == NULL)
     {
