@@ -15,7 +15,7 @@ child_t read_child_from_file(FILE *f)
 
     if (fgets(line, sizeof line, f) == NULL)
     {
-        printf("Kunne ikke læse næste række fra children.tsv\n");
+        printf("Could not read next row in children.tsv\n");
         exit(EXIT_FAILURE);
     }
 
